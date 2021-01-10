@@ -24,8 +24,8 @@ public class OrderTest {
     @Test
     public void set_items_should_update_the_cost_of_the_order(){
         double expectedCost = 119 + 269;
-
         order.setItems(restaurant.getMenu());
+
         double costOfOrder = order.getCost();
 
         assertEquals(expectedCost, costOfOrder);
