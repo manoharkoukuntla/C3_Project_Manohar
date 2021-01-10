@@ -10,10 +10,12 @@ public class Order {
     }
 
     public void setItems(List<Item> items) {
-       throw new UnsupportedOperationException();
+        for (Item item : items){
+            cost += item.getPrice();
+        }
     }
 
     public double getCost() {
-        throw new UnsupportedOperationException();
+        return cost;
     }
 }
